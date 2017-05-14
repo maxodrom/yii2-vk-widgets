@@ -8,7 +8,6 @@
 namespace maxodrom\vk\widgets;
 
 use yii\helpers\Html;
-use yii\helpers\Json;
 
 /**
  * Class CommentsWidget
@@ -56,11 +55,6 @@ class CommentsWidget extends BaseWidget
      */
     public function run()
     {
-        $props = [
-            'limit' => $this->commentsLimit,
-            'attach' => '*',
-        ];
-
         echo Html::tag(
             'div',
             '',
@@ -70,7 +64,7 @@ class CommentsWidget extends BaseWidget
         );
         echo Html::tag(
             'script',
-            "VK.Widgets.Comments('" . $this->containerId . "', " . Json::encode($props) . ");",
+            "VK.Widgets.Comments('" . $this->containerId . "', {limit:{$this->commentsLimit}, attach: '*'});",
             [
                 'type' => 'text/javascript'
             ]
