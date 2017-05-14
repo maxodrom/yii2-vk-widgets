@@ -1,0 +1,26 @@
+{
+    "name": "maxodrom/yii2-vk-widgets",
+    "type": "yii2-extension",
+    "description": "VKontakte widgets for Yii 2.",
+    "keywords": ["yii2", "vk", "vkontakte", "widget", "widgets"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/maxodrom/yii2-vk-widgets/issues",
+        "wiki": "https://github.com/maxodrom/yii2-vk-widgets/wiki",
+        "source": "https://github.com/maxodrom/yii2-vk-widgets"
+    },
+    "authors": [
+        {
+            "name": "Max Alexandrov",
+            "email": "max@maxodrom.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "maxodrom\\vk\\widgets\\": "src/"
+        }
+    }
+}
